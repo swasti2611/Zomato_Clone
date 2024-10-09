@@ -1,6 +1,6 @@
 import React from 'react'
+import "./login.css"
 
-import Modal from 'react-modal'
 const Login = () => {
 
     const loginwithgoogle = ()=>{
@@ -10,15 +10,15 @@ const Login = () => {
     <>
         <div className="login-page">
             <h1 style={{textAlign:"center"}}>Login</h1>
-            <div className="login-form">
-                <form >
-                    <input type="text" name="username" id="username" placeholder='username' />
-                    <input type="password" name="password" id="password" placeholder='password'  />
+            <div className="form">
+                <form className='login-form'>
+                    <input type="text" name="" id="" placeholder='username' />
+                    <input type="password" name="" id="" placeholder='password'  />
                     <button>Login</button>
                     <p className='message'>Not Registerd? <a href="#">Create an account</a></p>
                 </form>
                 <button className='login-with-google-btn' onClick={loginwithgoogle}>
-                    Sign In With Google
+                    Sign In With Google...
                 </button>
             </div>
         </div>
