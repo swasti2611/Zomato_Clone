@@ -1,0 +1,240 @@
+.header {
+    width: 100%;
+    height: 63px;
+    background-color: red;
+    color: white;
+   
+}
+/* Add this to your existing CSS */
+.header {
+    width: 100%;
+    height: 63px;
+    background-color: red;
+    color: white;
+    position: relative; /* Add this line */
+}
+
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu a, .menu .logout {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+
+.menu a:hover, .menu .logout:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 63px;
+        right: 0;
+        background-color: red;
+        width: 100%;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .user-logo {
+        left: 85%;
+    }
+}
+
+.user-logo{
+    width: 50px;
+    height: 50px;
+    left: 95%;
+    border-radius: 50%;
+    /* margin-left: 40px; */
+    position: absolute;
+    top: 5px;
+}
+.login-with-google-btn {
+    transition: background-color .3s, box-shadow .3s;
+    cursor: pointer;
+    margin-top: 20px;
+      
+    padding: 12px 16px 12px 42px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+    
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBkPSJNMTcuNiA5LjJsLS4xLTEuOEg5djMuNGg0LjhDMTMuNiAxMiAxMyAxMyAxMiAxMy42djIuMmgzYTguOCA4LjggMCAwIDAgMi42LTYuNnoiIGZpbGw9IiM0Mjg1RjQiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxwYXRoIGQ9Ik05IDE4YzIuNCAwIDQuNS0uOCA2LTIuMmwtMy0yLjJhNS40IDUuNCAwIDAgMS04LTIuOUgxVjEzYTkgOSAwIDAgMCA4IDV6IiBmaWxsPSIjMzRBODUzIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNNCAxMC43YTUuNCA1LjQgMCAwIDEgMC0zLjRWNUgxYTkgOSAwIDAgMCAwIDhsMy0yLjN6IiBmaWxsPSIjRkJCQzA1IiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNOSAzLjZjMS4zIDAgMi41LjQgMy40IDEuM0wxNSAyLjNBOSA5IDAgMCAwIDEgNWwzIDIuNGE1LjQgNS40IDAgMCAxIDUtMy43eiIgZmlsbD0iI0VBNDMzNSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTAgMGgxOHYxOEgweiIvPjwvZz48L3N2Zz4=);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 12px 11px;
+    
+    &:hover {
+      box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+    }
+    
+    &:active {
+      background-color: #eeeeee;
+    }
+    
+    &:focus {
+      outline: none;
+      box-shadow: 
+        0 -1px 0 rgba(0, 0, 0, .04),
+        0 2px 4px rgba(0, 0, 0, .25),
+        0 0 0 3px #c8dafc;
+    }
+  
+  }
+
+i.fa {
+    color: #3b5998;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.normal-login {
+    color: black !important;
+    border: gray solid 1px !important;
+    margin-top: 2px;
+}
+
+.login, .createacc{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+.login:hover, .createacc:hover{
+    color: white;
+}
+.createacc{
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 168px;
+    /* margin-top: -5px; */
+    /* margin-bottom: -29px; */
+    position: absolute;
+    top: 9px;
+    /* left: -76px; */
+    left: 84%;
+
+}
+
+.user {
+    float: right;
+    font-weight: bold;
+    margin-right: 60px;
+    margin-top: 15PX;
+    font-family: cursive;
+}
+
+.user-icon {
+    padding: 0px 20px 7px 0px !important;
+    color: forestgreen;
+}
+
+.google {
+    color: black !important;
+    border: gray solid 1px !important;
+}
+
+.google div {
+    padding: 0px 0px 0px 10px !important;
+}
+
+.google span {
+    padding: 5px 30px 5px 0px !important;
+}
+
+.login-heading {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.s-logo {
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    background: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 1%;
+    margin-left: 2%;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.login-block {
+    float: right;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+
+.login {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    /* left: 111%; */
+    left: -19%;
+    top: 19px;
+}
+
+.name{
+    top: 23px;
+    position: absolute;
+    left: -6%;
+    top: 19px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.signUp {
+    font-weight: bold;
+    border: solid 1px white;
+    padding: 3px;
+}
+.login .createacc{
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}

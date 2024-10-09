@@ -1,0 +1,239 @@
+.tabs {
+    position: relative;
+    min-height: 200px;
+    clear: both;
+    margin: 50px 0 25px;
+    background: white;
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-direction: row; /* Align tabs horizontally */
+}
+
+.tab {
+    flex: 1; /* Allow tabs to share the available space equally */
+    text-align: center; /* Center align the text */
+}
+
+.btn-danger{
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    width: 214px;
+}
+.tab label {
+    background: white;
+    padding: 10px 15px;
+   
+    cursor: pointer;
+    display: inline-block; /* Ensure label is inline-block */
+}
+
+.tab input[type=radio] {
+    display: none;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+    border-top: 1px solid gray;
+    background: white;
+    position: absolute;
+    top: 50px; /* Adjust to position below the tabs */
+    left: 0;
+    right: 0;
+}
+
+.tab input[type=radio]:checked + label {
+    background: white;
+    border-bottom: solid 4px red; /* Highlight the active tab */
+}
+
+.tab input[type=radio]:checked + label + .content {
+    display: block;
+}
+
+.gallery-button {
+    position: absolute;
+    left: 77%;
+    top: 75%;
+    width: 200px;
+    height: 35px;
+    opacity: 0.6;
+    border-radius: 3px;
+    background-color: #ffffff;
+}
+
+
+
+.add-number {
+    position: absolute;
+    bottom: -12%;
+    left: 25%;
+    color: forestgreen;
+}
+
+.subtotal {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: bold;
+    color: #292c40;
+}
+
+.title-img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 25%;
+}
+
+.item-name {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: #292c40;
+}
+
+.heading {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    color: #192f60;
+}
+
+.restaurant-name {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    color: #192f60;
+}
+
+.about {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    color: #192f60;
+}
+
+.head {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    color: #192f60;
+}
+
+.value {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    color: #192f60;
+}
+
+.title-img {
+    height: 106px;
+    width: 126px;
+    /* margin: auto; */
+    margin-inline-start: -1%;
+    /* margin-inline-end: -18%; */
+    object-fit: cover;
+    position: relative;
+    border-radius: 25%;
+    margin-top: 17px;
+  }
+
+  
+  
+  
+  .add-button {
+    position: absolute;
+    bottom: -26%;
+    left: 77%;
+    color: red;
+    width: 102px;
+    height: 37px;
+    padding: 5px;
+    border: none;
+    top: 70%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+  
+  .add-number {
+    position: absolute;
+    bottom: 12%;
+    left: 81%;
+    color: forestgreen;
+  }
+  
+  .subtotal {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292c40;
+  }
+  
+  .title-img {
+    height: 106px;
+    width: 126px;
+    /* margin: auto; */
+    margin-inline-start: -1%;
+    /* margin-inline-end: -18%; */
+    object-fit: cover;
+    position: relative;
+    border-radius: 25%;
+    margin-top: 17px;
+  }
+  
+  .item-name {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292c40;
+  }
+  
+  .heading {
+    width: 298px;
+    height: 43px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+  .restaurant-name {
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+
+ .glyphicon-glyphicon-remove-lose {
+    
+    position: absolute;
+    left: 45%;
+    top: 0%;
+  }
+@media only screen and (max-width: 600px) {
+    .gallery-button {
+        left: 55%;
+        top: 85%;
+    }
+}

@@ -1,0 +1,278 @@
+.filter-block {
+    width: 100%;
+    height: 682px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+background-color: #ffffff;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+
+*{
+font-family: Poppins;
+color:     #192f60;;
+
+}
+
+header {
+background-color: #ce0505;
+height: 80px;
+position: relative;
+}
+
+main {
+background-color: #ffffff;
+color: #192f60;
+}
+
+.logo_span {
+background-color: white;
+position: absolute;
+border-radius: 50%;
+padding: 5px 15px;
+left: 80px;
+top: 13px;
+}
+
+.logo {
+color: #ce0505;
+font-size: 33px;
+font-weight: 600;
+text-decoration: none;
+}
+
+.login-signup {
+position: absolute;
+right: 80px;
+top: 25px;
+word-spacing: 10px;
+}
+
+.login {
+color: white;
+text-decoration: none;
+}
+
+.create_acc {
+color: white;
+word-spacing: normal;
+text-decoration: none;
+border: 1px solid white;
+padding: 10px 10px;
+border-radius: 5px;
+}
+
+section {
+position: relative;
+top: 27px;  
+}
+
+.title-text {
+font-weight: 600;
+font-size: 36px;
+position: absolute;
+left: 80px;
+margin-bottom: 20px;
+}
+
+.filters-div {
+display:inline-block; 
+width: 260px; 
+height: 682px; 
+margin: 65px 45px 8px 80px;
+padding: 17px 25px 31px 26px; 
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+padding: 15px;
+}
+
+#filter-head {
+font-size: 20px;
+font-weight: 600;
+}
+.filter-checkbox{
+    display: flex;
+}
+
+.main-result {
+display: inline-block; 
+vertical-align: top;
+}
+
+.result1 {
+width: 794px; 
+height: 291px; 
+margin-bottom: 10px;  
+margin: 65px 154px 34px 30px;
+padding: 25px 32.6px 20px 35px; 
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.result2 {
+width: 794px; 
+height: 291px; 
+margin-bottom: 10px;  
+margin: 27px 154px 34px 30px;
+padding: 25px 32.6px 20px 35px; 
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.img-div {
+display: inline-block;
+}
+
+.select-opt {
+color: #192f60;
+font-size: 16px;  
+width: 210px;
+height: 37px;
+margin: 8px 0 20px 1px; 
+padding: 7px 16.7px 7px 15px; 
+border-radius: 3px; 
+border: solid 1px #8c96ab;
+}
+
+.option_filter {
+font-size: 18px;
+margin-bottom: 10px;
+margin-top: 5px;
+font-weight: 600;
+}
+
+label {
+font-size: 17px;
+margin-bottom: 5px;
+}
+
+.checkboxes {
+width: 18px;
+height: 18px;
+border-radius: 1.5px;
+border: 1.5px #3a5075 solid;
+margin-bottom: 10px;
+}
+
+.radios {
+width: 18px;
+height: 18px;
+margin-bottom: 10px;
+}
+
+.image1 {
+width: 179px;
+height: 128px;
+margin: 0 41px 31px 0;
+border-radius: 23px;
+padding: 10px;
+}
+
+
+.restaurant_info {
+display: inline-block;
+padding: 15px;
+}
+
+.head1 {
+font-size: 33px;
+font-weight: 600;
+margin-top: 10px;
+}
+
+.head2 {
+font-size: 17px;
+font-weight: 600;
+}
+
+.head3 {
+font-size: 17px;
+font-weight: 500;
+}
+
+.cuisine {
+display: inline-block;
+margin: 30px 100px 10px 10px;
+}
+
+.cost-for-two {
+display: inline-block; 
+margin: 0px 60px 10px 10px;
+}
+
+.cost-price {
+margin: -2px 176px 10px -74px;
+}
+
+.pagination {
+position: absolute;
+top: 780px;
+left: 35%;
+margin-top: 20px;
+padding-bottom: 30px;
+}
+
+.pagination a {
+font-size: 20px;
+font-weight: 600;
+width: 36px;
+height: 36px;
+opacity: 0.4;
+margin: 0 9px 0 9px;
+padding: 5px 15px 3px;
+border: solid 2px #8c96ab;
+text-decoration: none;
+background-color: #ffffff;
+border-radius: 7px;
+}
+
+.pagination a.active {
+font-size: 20px;
+font-weight: 500;
+width: 36px;
+height: 36px;
+margin: 0 9px 0 9px;
+padding: 5px 15px 3px;
+border-radius: 7px;
+border: solid 1px #8c96ab;
+background-color: #8c96ab;
+color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .filter-block {
+        width: 60%;
+    }
+}
+
+.item {
+    width: 90%;
+    height: 291px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    margin-left: 60PX;
+}
+
+.heading {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.pagination-item {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 7px;
+    border: solid 1px #8c96ab;
+    background-color: #ffffff;
+    text-align: center;
+    color: #8c96ab;
+}
