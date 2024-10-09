@@ -6,7 +6,7 @@ const Login = () => {
 
     const loginWithGoogle = () => {
         // Redirect to your backend for Google login
-        window.open("https://foodify-restro-backend.onrender.com/auth/google", "_self");
+        window.open("https://foodify-restro-backend.onrender.com/auth/google/callback", "_self");
     };
 
     return (
