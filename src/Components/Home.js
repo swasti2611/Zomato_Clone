@@ -2,12 +2,29 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Wallpaper from '../Components/Wallpaper';
 import Mealtypes from '../Components/Mealtypes';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
   const [locations, setLocations] = useState([]);
   const [mealtypes,setMealtypes]=useState([])
  
+  const navigate = useNavigate();
+
+  const getUser = async () => {
+    try {
+        const response = await axios.get("https://foodify-restro-backend.onrender.com/login/sucess", { withCredentials: true });
+
+        console.log("response",response)
+    } catch (error) {
+      navigate("*")
+    }
+}
+
+
+useEffect(() => {
+  getUser()
+}, [])
 
   useEffect(() => {
     sessionStorage.clear()
