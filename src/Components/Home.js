@@ -11,10 +11,11 @@ const Home = () => {
 
   useEffect(() => {
     sessionStorage.clear()
+    
     axios.get('https://foodify-restro-backend.onrender.com/api/locations')
       .then((res) => {
        console.log("***************",res.data); // Log the response data
-        setLocations(res.data)
+        setLocations(res.data) 
         setLoading(false); // Set loading to false once data is fetched
       })
       .catch((err) => {
@@ -27,7 +28,7 @@ const Home = () => {
   
 
   useEffect(() => {
-    axios.get('https://foodify-restro-backend.onrender.com/api/mealtypes')
+    axios.get(`https://foodify-restro-backend.onrender.com/api/mealtypes`)
       .then((res) => {
        console.log(res.data); // Log the response data
         setMealtypes(res.data)
