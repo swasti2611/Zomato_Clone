@@ -11,20 +11,7 @@ const Home = () => {
  
   const navigate = useNavigate();
 
-  const getUser = async () => {
-    try {
-        const response = await axios.get("https://foodify-restro-backend.onrender.com/login/sucess", { withCredentials: true });
-
-        console.log("response",response)
-    } catch (error) {
-      navigate("*")
-    }
-}
-
-
-useEffect(() => {
-  getUser()
-}, [])
+  
 
   useEffect(() => {
     sessionStorage.clear()
