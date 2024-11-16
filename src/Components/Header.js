@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../Style/header.css';
 import axios from 'axios';
-import SignUp from './SignUp';
+
 const Header = () => {
   const [userdata, setUserdata] = useState({});
 
@@ -46,7 +46,7 @@ const Header = () => {
                 </div>
                 <Link className="home" to="/">Home</Link>
                 <div className="col-8 col-md-4 col-lg-3 text-start">
-                  <Link to="/SignUp" className="createacc px-2 py-2">
+                  <Link to="/signup" className="createacc px-2 py-2">
                     Create an account
                   </Link>
                 </div>

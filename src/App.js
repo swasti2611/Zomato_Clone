@@ -7,6 +7,7 @@ import DetailsPage from './Components/DetailsPage';
 import Header from './Components/Header';
 import Login from './Components/Login';
 import Success from './Components/Success'; // Ensure you include this if you plan to use it.
+import SignUp from './Components/SignUp';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/filter' element={<FilterPage />} />
         <Route path='/details' element={<DetailsPage />} />
+        <Route path="/signup" element={<SignUp/>} />  {/* The SignUp route */}
         <Route path='/success' element={<Success />} /> {/* Ensure Success route is included if used */}
       </Routes>
     </BrowserRouter>
