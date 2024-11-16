@@ -24,7 +24,7 @@ const Mealtypes = ({ mealtypes }) => {
       }
     } else {
       // If not logged in, redirect to the login page
-      navigate("/Login");
+      navigate("/login");
     }
   }
 
