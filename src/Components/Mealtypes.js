@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../Style/home.css";
 import { useNavigate } from "react-router-dom";
+import Login from "./Login"
 import axios from "axios";
 
 const Mealtypes = ({ mealtypes }) => {
@@ -23,7 +24,7 @@ const Mealtypes = ({ mealtypes }) => {
       }
     } else {
       // If not logged in, redirect to the login page
-      navigate("/login");
+      navigate("/Login");
     }
   }
 
