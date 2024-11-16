@@ -1,24 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-
 import '../Style/header.css';
 import axios from 'axios';
 
-
-
 const Header = () => {
-  
   const [userdata, setUserdata] = useState({});
-
-  
- 
-
-  
-  
 
   const getUser = async () => {
     try {
-      const response = await axios.get("https://foodify-restro-backend.onrender.com/login/sucess", { withCredentials: true });
+      const response = await axios.get("https://foodify-restro-backend.onrender.com/login/success", { withCredentials: true });
       setUserdata(response.data.user);
       console.log(response.data.user);
     } catch (error) {
@@ -34,7 +24,6 @@ const Header = () => {
     getUser();
   }, []);
 
- 
   return (
     <div>
       <div className="header">
@@ -44,28 +33,28 @@ const Header = () => {
             {Object.keys(userdata).length > 0 ? (
               <>
                 <div className="name">{userdata.displayName}</div>
-               
-            <div className=" px-2 py-2" ><img src={userdata.image}  
-             className='user-logo'/></div>
-         
+                <div className=" px-2 py-2">
+                  <img src={userdata.image} className='user-logo' alt="user-logo" />
+                </div>
                 <div className="login" onClick={handleLogout}>Logout</div>
-                <Link className="home" to="/" >Home</Link>
+                <Link className="home" to="/">Home</Link>
               </>
             ) : (
               <>
-              <div className="login" ><Link to="/login">Login</Link></div>
-              <Link className="home" to="/" >Home</Link>
-              <div className="col-8 col-md-4 col-lg-3 text-start">
-            <div className="createacc px-2 py-2" >create an account</div>
-          </div>
-          </>
+                <div className="login">
+                  <Link to="/login">Login</Link>
+                </div>
+                <Link className="home" to="/">Home</Link>
+                <div className="col-8 col-md-4 col-lg-3 text-start">
+                  <Link to="/signup" className="createacc px-2 py-2">
+                    Create an account
+                  </Link>
+                </div>
+              </>
             )}
           </div>
-          
         </div>
       </div>
-
-      
     </div>
   );
 };
