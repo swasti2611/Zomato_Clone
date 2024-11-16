@@ -46,7 +46,7 @@ const Header = () => {
                 </div>
                 <Link className="home" to="/">Home</Link>
                 <div className="col-8 col-md-4 col-lg-3 text-start">
-                <Link to="/signup" className="createacc px-2 py-2">
+                <Link to="/signup" >
   Create an account
 </Link>
                 </div>
