@@ -21,6 +21,8 @@ const Mealtypes = ({ mealtypes }) => {
         navigate(`/filter?mealtype=${mealtypeId}&location=${locationId}`);
       } else {
         navigate(`/filter?mealtype=${mealtypeId}`);
+       console.log("*********************");
+       
       }
     } 
   }
