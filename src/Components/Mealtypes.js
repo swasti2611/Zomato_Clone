@@ -12,19 +12,21 @@ const Mealtypes = ({ mealtypes }) => {
     // Check if the user is logged in by verifying the presence of a token in sessionStorage
     const token = sessionStorage.getItem("token");  // or use localStorage based on your setup
 
-    if (token) {
-      // If the user is logged in, proceed to the filter page
-      let locationId = sessionStorage.getItem("locationId");
-      console.log("Session Storage:", locationId);
+    // if (token) {
+    //   // If the user is logged in, proceed to the filter page
+    //   let locationId = sessionStorage.getItem("locationId");
+    //   console.log("Session Storage:", locationId);
 
-      if (locationId) {
-        navigate(`/filter?mealtype=${mealtypeId}&location=${locationId}`);
-      } else {
-        navigate(`/filter?mealtype=${mealtypeId}`);
-       console.log("*********************");
-       
-      }
-    } 
+     
+    // } 
+
+    if (locationId) {
+      navigate(`/filter?mealtype=${mealtypeId}&location=${locationId}`);
+    } else {
+      navigate(`/filter?mealtype=${mealtypeId}`);
+     console.log("*********************");
+     
+    }
   }
 
   return (
