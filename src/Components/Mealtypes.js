@@ -14,7 +14,7 @@ const Mealtypes = ({ mealtypes }) => {
 
     // if (token) {
     //   // If the user is logged in, proceed to the filter page
-    //   let locationId = sessionStorage.getItem("locationId");
+      let locationId = sessionStorage.getItem("locationId");
     //   console.log("Session Storage:", locationId);
 
      
