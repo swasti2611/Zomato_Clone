@@ -22,10 +22,7 @@ const Mealtypes = ({ mealtypes }) => {
       } else {
         navigate(`/filter?mealtype=${mealtypeId}`);
       }
-    } else {
-      // If not logged in, redirect to the login page
-      navigate("/login");
-    }
+    } 
   }
 
   return (
